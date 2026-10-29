@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "DriveMate",
+    "slug": "drivemate-customer",
+    "scheme": "drivemate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.datxe.customer"
+    },
+    "android": {
+      "package": "com.datxe.customer",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Cho phép DriveMate dùng camera để chụp hiện trạng xe."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Cho phép DriveMate dùng vị trí để chọn điểm đón và theo dõi chuyến đi."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "apiUrl": {},
+      "googleWebClientId": {},
+      "facebookAppId": {},
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "e2bbaed7-3b76-4729-80ff-4791800a925d"
+      }
+    }
+  }
+}

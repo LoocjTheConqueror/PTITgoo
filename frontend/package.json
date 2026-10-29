@@ -1,0 +1,19 @@
+{
+  "name": "datxe",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "pnpm customer",
+    "android": "pnpm customer:android",
+    "customer": "pnpm --filter customer start --dev-client",
+    "driver": "pnpm --filter driver start --dev-client --port 8082",
+    "customer:android": "pnpm --filter customer exec expo run:android",
+    "driver:android": "pnpm --filter driver exec expo run:android",
+    "admin": "pnpm --filter admin dev",
+    "admin:build": "pnpm --filter admin build",
+    "admin:test": "pnpm --filter admin test",
+    "typecheck": "pnpm --filter customer exec tsc --noEmit && pnpm --filter driver exec tsc --noEmit && pnpm --filter admin typecheck",
+    "lint": "pnpm --filter customer lint && pnpm --filter driver lint && pnpm --filter admin lint",
+    "check": "pnpm typecheck && pnpm lint"
+  }
+}

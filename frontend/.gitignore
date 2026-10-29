@@ -1,0 +1,12 @@
+node_modules
+.expo
+dist
+*.log
+**/android/
+**/ios/
+
+google-services.json
+
+.env
+
+*.jks

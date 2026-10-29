@@ -1,0 +1,7 @@
+.env.local
+.env.*.local
+coverage/
+dist/
+*.tsbuildinfo
+.qa/
+.test-results.json
